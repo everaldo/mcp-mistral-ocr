@@ -1,0 +1,32 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - mistralApiKey
+    properties:
+      mistralApiKey:
+        type: string
+        description: Your Mistral API key for authenticating requests to the Mistral OCR
+          API.
+      ocrDir:
+        type: string
+        default: /data/ocr
+        description: Directory for OCR files inside the container.
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python',
+      args: ['-m', 'mcp_mistral_ocr.main'],
+      env: {
+        MISTRAL_API_KEY: config.mistralApiKey,
+        OCR_DIR: config.ocrDir
+      }
+    })
+  exampleConfig:
+    mistralApiKey: your_dummy_api_key
+    ocrDir: /data/ocr
