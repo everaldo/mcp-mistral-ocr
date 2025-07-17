@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/everaldo-mcp-mistral-ocr-badge.png)](https://mseep.ai/app/everaldo-mcp-mistral-ocr)
+
 # MCP Mistral OCR
 [![smithery badge](https://smithery.ai/badge/@everaldo/mcp-mistral-ocr)](https://smithery.ai/server/@everaldo/mcp-mistral-ocr)
 
