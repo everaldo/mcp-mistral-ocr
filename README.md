@@ -1,4 +1,5 @@
 # MCP Mistral OCR
+[![smithery badge](https://smithery.ai/badge/@everaldo/mcp-mistral-ocr)](https://smithery.ai/server/@everaldo/mcp-mistral-ocr)
 
 An MCP server that provides OCR capabilities using Mistral AI's OCR API. This server can process both local files and URLs, supporting images and PDFs.
 
@@ -17,6 +18,14 @@ An MCP server that provides OCR capabilities using Mistral AI's OCR API. This se
 - `OCR_DIR`: Directory path for local file processing. Inside the container, this is always mapped to `/data/ocr`
 
 ## Installation
+
+### Installing via Smithery
+
+To install Mistral OCR for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@everaldo/mcp-mistral-ocr):
+
+```bash
+npx -y @smithery/cli install @everaldo/mcp/mistral-crosswalk --client claude
+```
 
 ### Using Docker
 
