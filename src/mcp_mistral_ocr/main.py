@@ -46,10 +46,7 @@ if not OCR_DIR_PATH.exists():
 OUTPUT_DIR = OCR_DIR_PATH / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-app = FastMCP(
-    name="mcp-mistral-ocr",
-    version="0.1.0"
-)
+app = FastMCP("mcp-mistral-ocr")
 
 ocr_processor = MistralOCRProcessor(api_key=MISTRAL_API_KEY)
 
