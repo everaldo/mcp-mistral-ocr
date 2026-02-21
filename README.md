@@ -3,6 +3,10 @@
 
 An MCP server that provides OCR capabilities using Mistral AI's OCR API. This server can process both local files and URLs, supporting images and PDFs.
 
+<a href="https://glama.ai/mcp/servers/@everaldo/mcp-mistral-ocr">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@everaldo/mcp-mistral-ocr/badge" alt="mcp-mistral-ocr MCP server" />
+</a>
+
 ## Features
 
 - Process local files (images and PDFs) using Mistral's OCR
